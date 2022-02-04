@@ -22,7 +22,8 @@
     "ieee754": "^1.1.13",
     "int64-buffer": "^0.99.1007",
     "multi-fork": "0.0.2",
-    "through2": "^3.0.1"
+    "through2": "^3.0.1",
+    "uuid-parse": "^1.1.0"
   },
   "devDependencies": {
     "async": "^3.2.1",

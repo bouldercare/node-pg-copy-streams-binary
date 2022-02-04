@@ -95,6 +95,17 @@ module.exports = [
       .put(Buffer.from([0xff, 0xff, 0xff, 0xeb, 0xe2, 0x28, 0xa0, 0x00]))
       .buffer(),
   }, // -86400x10e6
+  { t: 'uuid', v: null, r: new BP().word32be(-1).buffer() },
+  {
+    t: 'uuid',
+    v: '6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b',
+    r: new BP()
+      .word32be(16)
+      .put(
+        Buffer.from([0x6e, 0xc0, 0xbd, 0x7f, 0x11, 0xc0, 0x43, 0xda, 0x97, 0x5e, 0x2a, 0x8a, 0xd9, 0xeb, 0xae, 0x0b])
+      )
+      .buffer(),
+  },
   // arrays
   { t: '_bool', v: null, r: new BP().word32be(-1).buffer() },
   {
